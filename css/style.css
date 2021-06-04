@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar .btn{
+    margin-left: 5px 10px;
+}
+body .btn{
+    background-color:  rgb(25, 190, 108);
+    border-radius: 15px;
+    font-size: 15px;
+    padding: 4px 25px;
+    font-weight: 600;
+    color: white; 
+    transition: 2s all ease-in-out;
+    animation: shadow-pulse 2s infinite;
+}
+body .btn:hover{
+    background: transparent;
+    border: none;
+}
+
+/* header section start  */
+#header{
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    
+}
+#header nav .navbar-brand{
+    color: rgb(25, 190, 108);   
+    font-size: 24px;
+    font-weight: 600;
+    padding: 15px 0;
+} 
+#header .navbar-nav{
+  padding: 0px 20px;  
+}
+#header .nav-item{
+    padding: 0px 8px;
+    margin: 0px 5px;
+}
+#header .nav-item .nav-link{
+    font-size: 15px;
+    font-weight: 600;
+}
+/* header section end  */
+
+/* about start  */
+
+#about .about-right img{
+    width: 85%;
+    height: auto;
+}
+#about2 .about2-left img{
+    width: 85%;
+    height: auto;
+}
+/* about end  */
+
+/* portfolio start  */
+
+#portfolio .portfolio-box img{
+    padding: 10px;
+    border: 2px solid rgb(25, 190, 108);
+    border-radius: 10px;
+}
+/* portfolio end  */
+
+/* contact start  */
+#contact .contact-right img{
+    width: 85%;
+    height: auto;
+}
+.social-container{
+    margin: 20px 0;
+}
+.social-container a{
+    border-radius: 20%;
+    margin: 0px 5px;
+    padding: 5px;
+    height: 40px;
+    width: 40px;
+    color: gray;
+}
+
+/* contact end  */
+
+.about-left{
+    animation-name: slide-about-left;
+    animation-duration: 2s;
+}
+.about-right{
+    animation-name: slide-about-right;
+    animation-duration: 2s;
+}
+/* back to top bootoom  */
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+    
+}
+/* animation  */
+@keyframes slide-about-left{
+    0%{
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slide-about-right{
+    0%{
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+/* box shados keyfraes  */
+@keyframes shadow-pulse{
+    0%{
+        box-shadow:0 0 0 0px rgba(0,0,0,0.2);
+    }
+    100%{
+        box-shadow:0 0 0 20px  rgba(0,0,0,0);
+    }
+}
